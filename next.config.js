@@ -2,10 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    localPatterns: [
-      { pathname: "/public/**" }
-    ],
-    remotePatterns: []
+    unoptimized: true
   },
   experimental: {}
 }

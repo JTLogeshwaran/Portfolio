@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, ArrowRight, Award, Zap, Shield, Wifi, Cpu } from 'lucide-react';
 import Image from 'next/image';
@@ -210,7 +210,7 @@ export default function Hero() {
               {/* Photo - Ghibli art style colorful portrait */}
               <div className="absolute inset-0 z-10" style={{ transform: 'translateZ(20px)' }}>
                 <Image
-                  src="/profile_avatar.png?v=6"
+                  src="/profile_avatar.png"
                   alt="Logeshwaran J T"
                   fill
                   priority
