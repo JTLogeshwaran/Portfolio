@@ -170,7 +170,7 @@ export default function Hero() {
             <span className="text-xs font-bold text-slate-600 uppercase tracking-widest">Connect</span>
             <div className="w-8 h-[1px] bg-slate-800" />
             <div className="flex gap-3">
-              <a href="https://github.com/thelogeshwaran" target="_blank" rel="noreferrer" className="w-11 h-11 rounded-xl border border-white/5 bg-slate-950/40 flex items-center justify-center text-slate-400 hover:text-white hover:border-blue-500/40 hover:bg-blue-500/5 transition-all duration-300"><Github size={18} /></a>
+              <a href="https://github.com/JTLogeshwaran" target="_blank" rel="noreferrer" className="w-11 h-11 rounded-xl border border-white/5 bg-slate-950/40 flex items-center justify-center text-slate-400 hover:text-white hover:border-blue-500/40 hover:bg-blue-500/5 transition-all duration-300"><Github size={18} /></a>
               <a href="https://www.linkedin.com/in/logeshwaranjt" target="_blank" rel="noreferrer" className="w-11 h-11 rounded-xl border border-white/5 bg-slate-950/40 flex items-center justify-center text-slate-400 hover:text-white hover:border-blue-500/40 hover:bg-blue-500/5 transition-all duration-300"><Linkedin size={18} /></a>
               <a href="mailto:logeshwaran.24ece@sonatech.ac.in" className="w-11 h-11 rounded-xl border border-white/5 bg-slate-950/40 flex items-center justify-center text-slate-400 hover:text-white hover:border-blue-500/40 hover:bg-blue-500/5 transition-all duration-300"><Mail size={18} /></a>
             </div>

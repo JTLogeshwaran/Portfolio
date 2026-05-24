@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Send, Check, Mail, Phone, MapPin, Github, Linkedin, Loader2 } from 'lucide-react';
 
@@ -94,7 +94,7 @@ export default function Contact() {
 
               {/* Social Links */}
               <div className="flex gap-3 mt-8 pt-6 border-t border-white/5">
-                <a href="https://github.com/thelogeshwaran" target="_blank" rel="noreferrer"
+                <a href="https://github.com/JTLogeshwaran" target="_blank" rel="noreferrer"
                   className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl border border-white/5 bg-slate-950/40 text-slate-400 hover:text-white hover:border-blue-500/30 hover:bg-blue-500/5 transition-all duration-300 text-xs font-bold font-heading">
                   <Github size={15} /> GitHub
                 </a>

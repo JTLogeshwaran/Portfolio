@@ -1,4 +1,4 @@
-﻿import React, { useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Github, ExternalLink, ArrowRight, Zap } from 'lucide-react';
 import Image from 'next/image';
@@ -184,7 +184,7 @@ export default function Projects() {
           transition={{ duration: 0.5 }}
         >
           <a
-            href="https://github.com/thelogeshwaran"
+            href="https://github.com/JTLogeshwaran"
             target="_blank"
             rel="noreferrer"
             className="flex items-center gap-3 px-8 py-4 rounded-full border border-white/10 bg-slate-950/40 hover:bg-blue-500/5 hover:border-blue-500/30 text-white font-bold text-sm uppercase tracking-wider transition-all duration-300 hover:-translate-y-0.5 group backdrop-blur-sm"
