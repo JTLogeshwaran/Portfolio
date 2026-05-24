@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { User, Layers, Cpu, ShieldAlert, Terminal, MapPin, Mail, Phone } from 'lucide-react';
 
@@ -18,11 +18,11 @@ export default function About() {
   ];
 
   const logs = [
-    { text: "ACADEMIC AFFILIATION: SONA ECE (2024–2028)", color: "text-slate-400" },
+    { text: "ACADEMIC AFFILIATION: SONA ECE (2024-2028)" },
     { text: "ACTIVE PROJECTS: 5 PROTOTYPES DEPLOYED", color: "text-blue-400" },
     { text: "RESEARCH DOMAIN: INTEGRATED CIRCUIT AUTOMATION", color: "text-indigo-400" },
-    { text: "SPORTS: CHESS 1st & 2nd PLACE · 100M SPRINT 1st", color: "text-purple-400" },
-    { text: "SYSTEM STATUS: HIGH PERFORMANCE · READY TO BUILD", color: "text-green-400" },
+    { text: "SPORTS: CHESS 1st & 2nd PLACE | 100M SPRINT 1st", color: "text-purple-400" },
+    { text: "SYSTEM STATUS: HIGH PERFORMANCE | READY TO BUILD", color: "text-green-400" },
   ];
 
   return (

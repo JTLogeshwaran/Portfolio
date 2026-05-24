@@ -119,13 +119,13 @@ export default function Hero() {
 
         {/* LEFT: Content */}
         <motion.div
-          className="lg:col-span-7 flex flex-col justify-center text-left"
+          className="lg:col-span-7 flex flex-col justify-center items-center lg:items-start text-center lg:text-left"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight font-heading uppercase text-white leading-[1.05]">
-            <div className="text-blue-400 text-sm sm:text-base font-bold tracking-[0.25em] uppercase mb-3 flex items-center gap-2"><span className="w-6 h-[2px] bg-blue-400 rounded-full inline-block"></span> Hi, I am</div>
+            <div className="text-blue-400 text-sm sm:text-base font-bold tracking-[0.25em] uppercase mb-3 flex items-center justify-center lg:justify-start gap-2"><span className="w-6 h-[2px] bg-blue-400 rounded-full inline-block"></span> Hi, I am</div>
             <span ref={titleRef} className="block bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-100 to-slate-400">
               Logeshwaran J T
             </span>
@@ -137,12 +137,12 @@ export default function Hero() {
             <span className="w-0.5 h-6 bg-blue-400 animate-pulse rounded-full" />
           </div>
 
-          <p className="text-slate-400 text-base sm:text-lg max-w-xl mb-10 leading-relaxed font-body">
+          <p className="text-slate-400 text-base sm:text-lg max-w-xl mb-10 leading-relaxed font-body text-center lg:text-left">
             Engineering smart embedded systems and IoT solutions. Bridging hardware and software to build real-world automated environments for a smarter future.
           </p>
 
           {/* Stats Panels */}
-          <div className="flex flex-wrap gap-3 mb-10">
+          <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-10">
             {stats.map((s, i) => (
               <div
                 key={i}
@@ -156,7 +156,7 @@ export default function Hero() {
           </div>
 
           {/* CTAs */}
-          <div className="flex flex-wrap gap-4 items-center mb-10">
+          <div className="flex flex-wrap justify-center lg:justify-start gap-4 items-center mb-10">
             <a href="#projects" className="px-8 py-4 rounded-full bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-bold flex items-center gap-2.5 transition-all duration-300 shadow-xl shadow-blue-500/25 hover:shadow-blue-500/40 hover:-translate-y-1">
               View My Projects <ArrowRight size={16} />
             </a>
@@ -166,7 +166,7 @@ export default function Hero() {
           </div>
 
           {/* Links */}
-          <div className="flex items-center gap-5">
+          <div className="flex flex-wrap justify-center lg:justify-start items-center gap-5">
             <span className="text-xs font-bold text-slate-600 uppercase tracking-widest">Connect</span>
             <div className="w-8 h-[1px] bg-slate-800" />
             <div className="flex gap-3">
@@ -179,7 +179,7 @@ export default function Hero() {
 
         {/* RIGHT: Cinematic 3D Tilting Photo Panel */}
         <motion.div
-          className="hidden lg:flex lg:col-span-5 items-center justify-center"
+          className="flex lg:col-span-5 items-center justify-center mt-12 lg:mt-0"
           initial={{ opacity: 0, scale: 0.85 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, ease: 'easeOut', delay: 0.2 }}
@@ -188,7 +188,7 @@ export default function Hero() {
             ref={cardRef}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-            className="relative w-[340px] h-[480px] cursor-pointer"
+            className="relative w-[280px] h-[400px] sm:w-[340px] sm:h-[480px] cursor-pointer"
             style={{ transformStyle: 'preserve-3d' }}
           >
             {/* Outer glow rings */}
@@ -252,7 +252,7 @@ export default function Hero() {
 
             {/* Floating chip - only CGPA */}
             <motion.div
-              className="absolute -right-16 top-[40%] px-4 py-2.5 rounded-xl bg-slate-950/90 border border-blue-500/30 backdrop-blur-md text-center shadow-xl shadow-blue-500/10 z-50"
+              className="hidden sm:block absolute -right-6 lg:-right-16 top-[40%] px-4 py-2.5 rounded-xl bg-slate-950/90 border border-blue-500/30 backdrop-blur-md text-center shadow-xl shadow-blue-500/10 z-50"
               animate={{ y: [0, -6, 0] }}
               transition={{ repeat: Infinity, duration: 3.2, ease: 'easeInOut' }}
               style={{ transform: 'translateZ(70px)' }}

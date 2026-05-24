@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Cpu, Terminal, Laptop, ShieldCheck, Sparkles, Orbit } from 'lucide-react';
 import { skillCategories } from '../data/skills';
@@ -159,6 +159,8 @@ export default function Skills() {
       ctx.save();
       ctx.translate(width / 2, height / 2);
 
+      const scaleFactor = Math.min(1, width / 450);
+
       // Draw orbit rings
       nodes.forEach((node) => {
         const isSelected = activeCategory === node.id;
@@ -168,8 +170,9 @@ export default function Skills() {
         ctx.lineWidth = isSelected ? 1.5 : 0.8;
         ctx.setLineDash(isSelected ? [] : [4, 8]);
         ctx.beginPath();
-        const rx = Math.abs(node.radius * Math.cos(angleY));
-        const ry = Math.abs(node.radius * Math.cos(angleX));
+        const radius = node.radius * scaleFactor;
+        const rx = Math.abs(radius * Math.cos(angleY));
+        const ry = Math.abs(radius * Math.cos(angleX));
         if (rx > 0 && ry > 0) {
           ctx.ellipse(0, 0, rx, ry, 0, 0, Math.PI * 2);
         }
@@ -195,9 +198,10 @@ export default function Skills() {
       ctx.restore();
 
       projectedCache = nodes.map((node) => {
+        const radius = node.radius * scaleFactor;
         const t = time * node.speed * 0.1 + node.phase;
-        const x3d = Math.cos(t) * node.radius;
-        const z3d = Math.sin(t) * node.radius;
+        const x3d = Math.cos(t) * radius;
+        const z3d = Math.sin(t) * radius;
         const y3d = Math.sin(time * 0.002 + node.phase) * 8;
 
         const xRot = x3d * Math.cos(angleY) - z3d * Math.sin(angleY);
