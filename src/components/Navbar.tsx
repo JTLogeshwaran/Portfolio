@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 
@@ -13,6 +13,7 @@ export default function Navbar() {
     { label: "Projects", href: "#projects" },
     { label: "Timeline", href: "#experience" },
     { label: "Resume", href: "#resume" },
+    { label: "Certifications", href: "#certifications" },
     { label: "Contact", href: "#contact" }
   ];
 
