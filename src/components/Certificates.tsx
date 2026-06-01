@@ -38,19 +38,90 @@ export default function Certificates() {
     },
     {
       id: 2,
-      title: "C & Java Programming Fundamentals",
-      issuer: "NxtWave / NASSCOM",
-      date: "September 2024",
+      title: "Design Thinking - A Primer (Elite)",
+      issuer: "NPTEL / IIT Madras",
+      date: "Jul-Aug 2025",
       category: "development",
-      credentialId: "NXT-NASS-PROG-305",
-      skills: ["C Programming", "Java Core", "Data Structures", "Algorithms", "Object-Oriented Programming (OOP)"],
-      description: "Certified program covering foundational computer science concepts, algorithm development, memory addressing in C, and Java object-oriented programming paradigms.",
-      link: "https://nasscom.in/",
-      color: "from-indigo-500 to-purple-500",
-      icon: <FileBadge className="text-indigo-400" size={24} />
+      credentialId: "NPTEL25MG106S346400741",
+      skills: ["Design Thinking", "Product Innovation", "User-Centric Design", "Problem Solving"],
+      description: "Elite status certification with a score of 68% for completing the Design Thinking curriculum, focusing on empathy-driven prototyping, iteration, and design fundamentals.",
+      link: "https://nptel.ac.in/",
+      color: "from-purple-500 to-indigo-500",
+      icon: <Award className="text-purple-400" size={24} />,
+      image: "/certificates/nptel_design_thinking.png"
     },
     {
       id: 3,
+      title: "Build Your Own Static Website",
+      issuer: "NxtWave CCBP Academy",
+      date: "December 16, 2025",
+      category: "development",
+      credentialId: "JZBFTOOABX",
+      skills: ["HTML5", "CSS3", "Bootstrap 4", "Responsive Design"],
+      description: "Awarded for successfully completing the curriculum and projects to build, style, and deploy static web layouts using HTML, CSS, and Bootstrap grids.",
+      link: "https://certificates.ccbp.in/academy/static-website?id=JZBFTOOABX",
+      color: "from-blue-600 to-indigo-600",
+      icon: <Code2 className="text-blue-400" size={24} />,
+      image: "/certificates/nxtwave_static_website.png"
+    },
+    {
+      id: 4,
+      title: "Build Your Own Responsive Website",
+      issuer: "NxtWave CCBP Academy",
+      date: "December 23, 2025",
+      category: "development",
+      credentialId: "PFAOEHHHSG",
+      skills: ["Bootstrap 4", "CSS Flexbox", "Media Queries", "Responsive Layouts"],
+      description: "Awarded for designing web layouts that adapt seamlessly across devices using advanced CSS layouts, media queries, and Bootstrap's responsive grid system.",
+      link: "https://certificates.ccbp.in/academy/build-your-own-responsive-website?id=PFAOEHHHSG",
+      color: "from-indigo-500 to-purple-500",
+      icon: <Code2 className="text-indigo-400" size={24} />,
+      image: "/certificates/nxtwave_responsive_website.png"
+    },
+    {
+      id: 5,
+      title: "Digital Application Fundamentals (STEM)",
+      issuer: "NASSCOM FutureSkills Prime",
+      date: "May 30, 2026",
+      category: "development",
+      credentialId: "26300581626",
+      skills: ["Digital Tech", "STEM Applications", "Analytical Logic", "Modern Software"],
+      description: "Aligned to Competency Standards developed by IT-ITeS Sector Skills Council NASSCOM in collaboration with Industry and Government.",
+      link: "https://futureskillsprime.in/",
+      color: "from-cyan-500 to-teal-500",
+      icon: <FileBadge className="text-cyan-400" size={24} />,
+      image: "/certificates/futureskills_digital_fundamentals.png"
+    },
+    {
+      id: 6,
+      title: "Embedded Systems & IoT Workshop",
+      issuer: "LIVEWIRE (CADD Centre)",
+      date: "November 3, 2025",
+      category: "iot",
+      credentialId: "LIVEWIRE-SALEM-982",
+      skills: ["ESP32 & Arduino", "Wokwi Simulation", "ThingSpeak Cloud API", "Sensor Telemetry"],
+      description: "Hands-on 3-day training on embedded systems design and IoT protocols, compiling circuits in Wokwi simulator and publishing metrics to ThingSpeak cloud.",
+      link: "https://www.livewireindia.com/",
+      color: "from-purple-500 to-pink-500",
+      icon: <Cpu className="text-purple-400" size={24} />,
+      image: "/certificates/livewire_iot_embedded.png"
+    },
+    {
+      id: 7,
+      title: "Srinivasa Ramanujan Mathematical Competitions",
+      issuer: "Indian Society for Technical Education (ISTE)",
+      date: "January 2026",
+      category: "development",
+      credentialId: "ISTE-SRMC-2025-26",
+      skills: ["Mathematics", "Logical Reasoning", "Analytical Thinking", "Problem Solving"],
+      description: "Participation certificate in the National Level Srinivasa Ramanujan Mathematical Competitions (Level 1 Chapter Level) conducted for engineering college students.",
+      link: "https://www.isteonline.in/",
+      color: "from-rose-500 to-amber-500",
+      icon: <Award className="text-rose-400" size={24} />,
+      image: "/certificates/iste_math_2026.png"
+    },
+    {
+      id: 8,
       title: "Deep Learning Onramp",
       issuer: "MathWorks (MATLAB)",
       date: "October 3, 2025",
@@ -64,7 +135,7 @@ export default function Certificates() {
       image: "/certificates/matlab_deep_learning.jpg"
     },
     {
-      id: 4,
+      id: 9,
       title: "Image Processing Onramp",
       issuer: "MathWorks (MATLAB)",
       date: "October 3, 2025",
@@ -78,7 +149,20 @@ export default function Certificates() {
       image: "/certificates/matlab_image_processing.jpg"
     },
     {
-      id: 5,
+      id: 10,
+      title: "C & Java Programming Fundamentals",
+      issuer: "NxtWave / NASSCOM",
+      date: "September 2024",
+      category: "development",
+      credentialId: "NXT-NASS-PROG-305",
+      skills: ["C Programming", "Java Core", "Data Structures", "Algorithms", "Object-Oriented Programming (OOP)"],
+      description: "Certified program covering foundational computer science concepts, algorithm development, memory addressing in C, and Java object-oriented programming paradigms.",
+      link: "https://nasscom.in/",
+      color: "from-indigo-500 to-purple-500",
+      icon: <FileBadge className="text-indigo-400" size={24} />
+    },
+    {
+      id: 11,
       title: "IoT Foundations & Embedded Systems",
       issuer: "Online Certification",
       date: "February 2025",
@@ -91,20 +175,7 @@ export default function Certificates() {
       icon: <Cpu className="text-purple-400" size={24} />
     },
     {
-      id: 6,
-      title: "Design Thinking - A Primer",
-      issuer: "NPTEL / IIT Madras",
-      date: "Jul-Aug 2025",
-      category: "development",
-      credentialId: "NPTEL-DT-2025-462",
-      skills: ["Design Thinking", "Product Innovation", "User-Centric Design", "Problem Solving"],
-      description: "Elite certification for completing the Design Thinking curriculum, focusing on empathy-driven prototyping, iteration, and design fundamentals for smart solutions.",
-      link: "https://nptel.ac.in/",
-      color: "from-blue-600 to-indigo-600",
-      icon: <Award className="text-blue-400" size={24} />
-    },
-    {
-      id: 7,
+      id: 12,
       title: "Digital 101 - Gold",
       issuer: "NASSCOM FutureSkills Prime",
       date: "May 2025",
@@ -117,7 +188,7 @@ export default function Certificates() {
       icon: <FileBadge className="text-amber-400" size={24} />
     },
     {
-      id: 8,
+      id: 13,
       title: "Data Processing & Visualisation",
       issuer: "Accenture x NASSCOM (AI ASCEND)",
       date: "March 2025",
@@ -130,7 +201,7 @@ export default function Certificates() {
       icon: <Brain className="text-purple-400" size={24} />
     },
     {
-      id: 9,
+      id: 14,
       title: "Course Completion Certificate",
       issuer: "Infosys Springboard",
       date: "April 2025",
@@ -143,7 +214,7 @@ export default function Certificates() {
       icon: <Code2 className="text-cyan-400" size={24} />
     },
     {
-      id: 10,
+      id: 15,
       title: "Certificate of Achievement",
       issuer: "Infosys Springboard",
       date: "April 2025",
