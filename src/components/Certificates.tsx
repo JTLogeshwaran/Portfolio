@@ -89,6 +89,71 @@ export default function Certificates() {
       link: "#",
       color: "from-purple-500 to-pink-500",
       icon: <Cpu className="text-purple-400" size={24} />
+    },
+    {
+      id: 6,
+      title: "Design Thinking - A Primer",
+      issuer: "NPTEL / IIT Madras",
+      date: "Jul-Aug 2025",
+      category: "development",
+      credentialId: "NPTEL-DT-2025-462",
+      skills: ["Design Thinking", "Product Innovation", "User-Centric Design", "Problem Solving"],
+      description: "Elite certification for completing the Design Thinking curriculum, focusing on empathy-driven prototyping, iteration, and design fundamentals for smart solutions.",
+      link: "https://nptel.ac.in/",
+      color: "from-blue-600 to-indigo-600",
+      icon: <Award className="text-blue-400" size={24} />
+    },
+    {
+      id: 7,
+      title: "Digital 101 - Gold",
+      issuer: "NASSCOM FutureSkills Prime",
+      date: "May 2025",
+      category: "development",
+      credentialId: "NASSCOM-D101-GOLD",
+      skills: ["Digital Technologies", "Cloud Computing", "Web Architectures", "Emerging Tech"],
+      description: "Gold category NASSCOM certified course on essential digital technologies, computing frameworks, and modern web application patterns.",
+      link: "https://futureskillsprime.in/",
+      color: "from-amber-500 to-yellow-500",
+      icon: <FileBadge className="text-amber-400" size={24} />
+    },
+    {
+      id: 8,
+      title: "Data Processing & Visualisation",
+      issuer: "Accenture x NASSCOM (AI ASCEND)",
+      date: "March 2025",
+      category: "ai",
+      credentialId: "ACCENTURE-DPV-982",
+      skills: ["Data Visualisation", "Data Processing", "Excel & PowerBI", "Analytics"],
+      description: "Completed Accenture's Level 2 AI-Ready program focusing on processing raw dataset matrices, transforming data flows, and engineering visual intelligence reports.",
+      link: "https://futureskillsprime.in/",
+      color: "from-purple-500 to-indigo-500",
+      icon: <Brain className="text-purple-400" size={24} />
+    },
+    {
+      id: 9,
+      title: "Course Completion Certificate",
+      issuer: "Infosys Springboard",
+      date: "April 2025",
+      category: "development",
+      credentialId: "INFOSYS-CC-839",
+      skills: ["Java Programming", "Object Oriented Design", "Software Quality", "OOP Basics"],
+      description: "Certified course on core Java software engineering standards, structural analysis, program testing, and OOP development models.",
+      link: "https://springboard.infosys.com/",
+      color: "from-cyan-500 to-blue-500",
+      icon: <Code2 className="text-cyan-400" size={24} />
+    },
+    {
+      id: 10,
+      title: "Certificate of Achievement",
+      issuer: "Infosys Springboard",
+      date: "April 2025",
+      category: "development",
+      credentialId: "INFOSYS-COA-392",
+      skills: ["Algorithm Design", "Computational Logic", "Data Structures", "Problem Solving"],
+      description: "Awarded for high-performance score in computational logic evaluation and programming algorithm design.",
+      link: "https://springboard.infosys.com/",
+      color: "from-indigo-600 to-purple-600",
+      icon: <Award className="text-indigo-400" size={24} />
     }
   ];
 
